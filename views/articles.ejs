@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Articles</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>All Articles</h1>
+    <div class="articles-container">
+      <% articles.forEach(function(article) { %>
+        <div class="article-card">
+          <h2 class="article-title"><%= article.title %></h2>
+          <p class="article-content"><%= article.content %></p>
+          <p class="article-meta">Author: <%= article.author %></p>
+          <p class="article-meta">Created At: <%= article.createdAt %></p>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</body>
+</html>
